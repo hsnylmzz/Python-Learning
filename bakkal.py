@@ -18,7 +18,7 @@ def stok_yazdir():
 
 def stoga_urun_ekle(adi, adet, alis, satis):
     if stok.get(adi):
-        print(f"{adi} urununden {stok[adi]['adet']} adet var.")
+        print(f"{adi} urununden {stok[adi]} adet var.")
         stok[adi] += int(adet)
        # stok[adi]['adet'] = stok[adi]['adet'] + int (adet)
         fiyatlar[adi]['adet'] = float(alis)
@@ -26,14 +26,24 @@ def stoga_urun_ekle(adi, adet, alis, satis):
     else:
         stok[adi] = int(adet)
         fiyatlar[adi] = {
-            
             "alış": float(alis),
             "satış": float(satis)
         }
+        kar_zarar[adi] = 0
     print(f"{adi} stogu guncellendi. Guncel adet : {stok[adi]}")
 
-#def satis_yap(adi, adet):
+def satis_yap(adi, adet):
+    if stok.get(adi, 0) >= int(adet):
+        stok[adi] -= int(adet)
+        kar =  (fiyatlar[adi]["satış"] - fiyatlar[adi]["alış"]) 
+        kar_zarar[adi] += kar
+    else:
+        print(f"Stokta {stok[adi]} adet {adi} var !")
 
+def toplam_kar_hesapla():
+    print(kar_zarar)
+    toplam_kar = sum(kar_zarar.values())
+    print(f"Toplam Kar: {toplam_kar}")
 
 while True:
     print("""
@@ -51,3 +61,10 @@ while True:
         urun_satis = input("Urun satis fiyatini girin: ")
         stoga_urun_ekle(urun_adi, urun_adeti,
                         urun_alis, urun_satis)
+    elif secenek == 1:
+        stok_yazdir()
+        urun_adi = input("Urun adini girin: ")
+        urun_adeti = input("Urun adetini girin: ")
+        satis_yap(urun_adi,urun_adeti)
+    elif secenek == 2:
+        toplam_kar_hesapla()
