@@ -12,3 +12,6 @@ class Sınıf():
     @staticmethod
     def statik_metot():
         print('statik metot')
+  
+ s = Sınıf()
+ s.örnek_metodu()
