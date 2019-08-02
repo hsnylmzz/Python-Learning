@@ -1,7 +1,7 @@
 def calculateCiro(sell_amount, sell_value):
     return sell_amount-sell_value
 
-def writeCiro(name, giro):
+def writeCiro(name, ciro):
     try:
         with open("ciro.txt","r+") as ciroText:
             allData = ciroText.readlines()
