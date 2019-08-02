@@ -1,0 +1,10 @@
+name : çikolata   , price : 6.83    , tax : 0.18
+name : gofret     , price : 3.08    , tax : 0.18
+name : lastik     , price : 230.46  , tax : 0.18
+name : ekmek      , price : 2.42    , tax : 0.08
+name : şeker      , price : 12.07   , tax : 0.08 
+name : yağ        , price : 37.82   , tax : 0.08
+name : bebek bezi , price : 50.01   , tax : 0.18
+name : matkap     , price : 136.02  , tax : 0.18
+name : telefon    , price : 2601.21 , tax : 2.0
+name : çorap      , price : 4.7     , tax : 0.18

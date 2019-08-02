@@ -1,0 +1,10 @@
+name : çikolata   ,  sum = 35000000
+name : gofret     ,  sum = 32000000
+name : lastik     ,  sum = 550000
+name : ekmek      ,  sum = 75000000
+name : şeker      ,  sum = 60000000
+name : yağ        ,  sum = 50000000
+name : bebek bezi ,  sum = 20000000
+name : matkap     ,  sum = 500000
+name : telefon    ,  sum = 15000000  
+name : çorap      ,  sum = 500000
