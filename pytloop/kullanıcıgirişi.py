@@ -12,15 +12,15 @@ while True:
     kul_adı = input("Kullanıcı Adı: ")
     parola = input("Şifre: ")
     
-    if (kul_adı != sys_kul_adı or parola == sys_parola):
+    if (kul_adı != sys_kul_adı and parola == sys_parola):
         print("Kullanıcı Adı Yanlış")
         giriş_hakkı -= 1
         print("Giriş Hakkı: ",giriş_hakkı)
-    elif (kul_adı == sys_kul_adı or parola != sys_parola):
+    elif (kul_adı == sys_kul_adı and parola != sys_parola):
         print("Şifre Yanlış")
         giriş_hakkı -= 1
         print("Giriş Hakkı: ",giriş_hakkı)
-    elif (kul_adı != sys_kul_adı or parola != sys_parola):
+    elif (kul_adı != sys_kul_adı and parola != sys_parola):
         print("Hepsi Yanlış")
         giriş_hakkı -= 1
         print("Giriş Hakkı: ",giriş_hakkı)
