@@ -1,0 +1,5 @@
+Müşteri Adı   Pizza Adı   Neyli    Ücreti
+
+
+Hasan Yilmaz	Margarita	Etli	58
+Hakan Aksoy	Turk Pizzasi	Zeytinli	63
